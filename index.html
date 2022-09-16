@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Encriptador de texto</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+       
+    </head>
+
+    <body id="pantallaCompleta">
+        <header>
+            <img class="logo" src="imagenes/Logo.png" alt="logo alura">
+            <h1 class="titulo">Encriptador de texto </h1>
+        </header>
+
+        <main id="main">
+            <section class="pantallaI">
+                <textarea class="textoIngresadoUsuario" cols="10" rows="10" placeholder="Ingrese el texto aquí" autofocus required></textarea>
+
+                <div>
+                    <p> &#9888 Solo letras minúsculas y sin acentos.</p>
+                    <ul class="botones">
+                        <li><button class="boton" onclick="encriptarTexto()">Encriptar</button></li>
+                        <li><button class="boton" onclick="desencriptarTexto()">Desencriptar</button></li>
+                    </ul>
+                </div>
+            </section>
+           
+            <aside class="pantallaD">
+                <div class="resultado">
+                    <div id="imgMunecoYTexto">
+                        <img class="muneco" src="imagenes/Muñeco.png" alt="muñeco">
+                        <p class="textoMuneco1">Ningún mensaje fue encontrado</p>
+                        <p class="textoMuneco2">Ingresa el texto que desees encriptar o desencriptar</p>
+                    </div>
+                    <div id="resultadoYCopiar">
+                        <textarea class="resultadoTexto" cols="20" rows="10" readonly></textarea>
+                        <button class="copiar" onclick="copiar()">Copiar</button>
+                    </div>    
+                    
+                </div>
+            </aside>
+        </main>
+
+        <footer id="footer">
+            <p>Desarrollado por: Claudia Garrido M.</p>
+        </footer>
+        <script src="Encriptador.js"></script>
+
+    </body>
+</html>
